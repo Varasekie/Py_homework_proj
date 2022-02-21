@@ -2,7 +2,7 @@ import requests
 import re
 
 def get_url_message():
-    url = 'https://tieba.baidu.com/p/2125372029#!/l/p1'
+    url = 'http://www.xinhuanet.com/'
     Header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
         'Host': 'tieba.baidu.com'
@@ -11,6 +11,7 @@ def get_url_message():
     response = requests.get(url, Header)
     # print(response.status_code)
     str = response.text
+    print(str)
     return str
 
 
